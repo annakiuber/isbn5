@@ -1,0 +1,54 @@
+
+
+body{
+
+  color: #993333;
+  font-size: 150%;
+  align-content: center;
+  text-align: center;
+  background-image: url(/img/homeback.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-attachment: fixed;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 7s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 7s linear infinite;
+    animation-iteration-count: infinite;
+    padding-top: 50px;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    from {background-image: url(/img/homeback.jpg);}
+    to {background-image: url(/img/homeback2.jpg);}
+}
+/* Standard syntax */
+@keyframes example {
+    from {background-image: url(/img/homeback.jpg);}
+    to {background-image: url(/img/homeback2.jpg);}
+}
+
+h3{
+  color: #cc9966;
+  text-shadow: 0 0 5px #663333;
+}
+h2{
+  color: #cc9966;
+  text-shadow: 0 0 5px #663333;
+}
+
+
+.footer {
+    font-size: 75%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #663333;
+    color: white;
+    text-align: center;
+}
+.inputbox {
+  padding-top: 100px;
+}
