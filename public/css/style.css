@@ -6,7 +6,7 @@ body{
   font-size: 150%;
   align-content: center;
   text-align: center;
-  background-image: url(homeback.jpg);
+  background-image: url(../homeback.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -20,13 +20,13 @@ body{
 }
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes example {
-    from {background-image: url(homeback.jpg);}
-    to {background-image: url(homeback2.jpg);}
+    from {background-image: url(../homeback.jpg);}
+    to {background-image: url(../homeback2.jpg);}
 }
 /* Standard syntax */
 @keyframes example {
-    from {background-image: url(homeback.jpg);}
-    to {background-image: url(homeback2.jpg);}
+    from {background-image: url(../homeback.jpg);}
+    to {background-image: url(../homeback2.jpg);}
 }
 
 h3{
