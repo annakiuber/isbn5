@@ -52,6 +52,7 @@ li a:hover {
 .flex-container {
   display: flex;
   color: #ffcccc;
+  text-shadow: 0 0 5px #663333;
   font-size: 70%;
   flex-direction: column;
   border-radius: 10px;
@@ -112,21 +113,20 @@ h2{
 }
 
 
-.footer {
+.footer a {
 
     font-size: 75%;
+    text-align: right;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
+    margin-right: 25px;
     background-color: #663333;
-    color: white;
-    text-align: center;
+    color: #999999;
+    text-align: right;
 }
-p.footer{
-  text-align: right;
 
-}
 .inputbox {
   padding-top: 100px;
 }
