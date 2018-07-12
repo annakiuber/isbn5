@@ -17,26 +17,39 @@
 </html>
  -->
 
-<body>
+
 	<h3>Here are all of your searched ISBN numbers.</h3>
 
-	<h2><% CSV.open('isbn_file2.csv', 'w') do |csv| %>
+	<% CSV.open('isbn_file2.csv', 'w') do |csv| %>
   		<% CSV.read('isbn_file.csv').uniq.each { |r| csv << r } %>
 	<% end %>
 	<% connect2 %>
 
 
-	<% CSV.foreach("isbn_file2.csv") do |row| %>
-		<div class="valid">
-			<%= row[0] %> - <%= row[1] %>
+<%counter = 0%>
+<div style="display:flex">
+	<div style="flex:1">
+		<% CSV.foreach("isbn_file2.csv") do |row| %>
+				<%if counter.even?%>
+					<div id ="left"><%= row[0] %> - <%= row[1] %><br></div>
+				<% end%>
+				<%counter += 1%>
+		<% end%>
+	</div>
+	<%new_counter = 0%>
+		<div style="flex:1">
+			<% CSV.foreach("isbn_file2.csv") do |row| %>
+				<%if new_counter.odd?%>
+					<div id ="right"><%= row[0] %> - <%= row[1] %></div>
+				<%end%>
+				<%new_counter += 1%>
+			<%end%>
+		</div>
+</div>
+	
+<button class="gohomebutton" onclick="window.location='/'">Go back</button>
 
 
-  		</div>
-	<% end %>
-	<br><br>
 
-
-	<button onclick="window.location.href='/'">I want to go back.</button>
-</h2>
 </body>
 </html>
